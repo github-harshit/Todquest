@@ -1,0 +1,29 @@
+.deals{
+    padding-top: 2rem;
+    & h2{
+        text-align: center;
+       
+   }
+    &__border{
+         width: 6rem;
+         height: 0.2rem;
+         background-color: var(--primaryRed);
+         margin: 0 auto;
+    }
+
+    &__box{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:3rem; 
+    padding-top: 4rem; 
+    margin-top: 10px;
+
+
+    }
+    width: 70%;
+    margin: 0 auto; 
+    
+    
+}

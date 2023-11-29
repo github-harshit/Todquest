@@ -1,0 +1,200 @@
+.works{
+     width: 70%;
+     margin: 0 auto;
+     height: 50rem;
+
+     & h2{
+         text-align: center;
+     }
+     &__border{
+        width: 6rem;
+        height: 0.2rem;
+        background-color: var(--primaryRed);
+        margin: 0 auto;
+   }
+    
+     &__cards{
+        width: 100%;
+         display: flex;
+         gap:4rem; 
+         
+        
+         
+
+
+         &__card{
+            width:33.33%; 
+             padding-top: 2rem;
+             margin-top: 2rem;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             border-radius: 16px;
+             border: 1px solid #ECECEC;
+             background: #FFF;
+             text-align: center;
+
+             &__image{
+                height: 3rem; 
+                width:3rem;
+                 background-color: pink;
+                position: relative;
+
+                 & img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 50%; /* Make the image fill the container */
+                    height: 50%; /* Make the image fill the container */
+                    object-fit: contain;
+                 }
+
+                
+             }
+
+         }
+
+     }
+
+
+     &__mobiles{
+         display: flex;
+         background-color: rgb(250, 207, 214);
+        
+         padding-top: 3rem;
+
+         &__content{
+             display: flex;
+             flex-direction: column;
+             margin-left: 7rem;
+             width: 30%;
+           
+
+             & h1{
+                 color: red;
+             }
+             & p{
+                 font-size: 16px;
+                 color: #414141 ;
+                 font-weight: 400;
+             }
+             &__buttons{
+                 display: flex;
+               
+                 justify-content: space-between;
+                 height: 3rem;
+             }
+
+             &__btn{
+                display: flex;
+        
+        width: 9rem;
+        height:100%;  
+        padding: 8px 22px;
+        justify-content: center;
+        align-items: center;
+         gap: 4px;
+        border-radius: 8px;
+        border: 1px solid #E8E8E8;
+        background: #FFF;
+        box-shadow: 6px 6px 60px 0px rgba(0, 0, 0, 0.07);
+        background-repeat: no-repeat;
+        background-position: 2px 50%;
+        background-size: 20px 20px;
+        margin-bottom: 10px;
+        
+        &--app{
+             background-image: url("../images/apple.png");
+        }
+        &--play{
+             background-image: url("../images/playStore.png");
+        }
+                
+             }
+            
+         }
+
+         
+     }
+}
+
+@media(max-width:650px){
+     .works{
+         width: 100%;
+         margin: 0;
+         height: 85rem;
+         margin-bottom: 4rem;
+        
+
+         &__cards{
+             width: 100%;
+             gap:2rem; 
+             flex-wrap: wrap;
+             justify-content: center;
+            &__card{
+                 width: 50%;
+            }
+         }
+         &__mobiles{
+             width: 100%;
+             flex-direction: column;
+           
+
+             &__content{
+                 width: 90%;
+                 margin: 0;
+                 padding-left: 1rem;
+                 
+                 
+
+                 &__buttons{
+                    align-items: center;
+                    justify-content: space-evenly;
+                     
+                 }
+             }
+
+             &__image{
+                display: none;
+                 width: 100%;
+                 padding-top: 2rem;
+                 & img{
+                     width: 100%;
+                     object-fit: cover;
+                 }
+             }
+            
+         }
+     }   
+
+}
+
+
+@media(min-width:650px) and (max-width:900px){
+     .works{
+        width: 90%;
+         height: 40rem;
+         margin-bottom: 4rem;
+
+         &__cards{
+             
+         }
+         &__mobiles{
+            height: 40%;
+            &__content{
+               
+                margin-left: 2rem;
+                width: 80%;
+                &__buttons{
+                     flex-direction: column;
+                }
+            }
+            &__image{
+                width: 70%;
+                display: none;
+               
+            }
+         }
+     }
+}

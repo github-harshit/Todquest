@@ -1,0 +1,86 @@
+.footer{ 
+    width: 100%;
+     display: flex;
+     padding-top: 1rem;
+     background-color: var(--navyBlue);
+     color:#fff; 
+
+   
+
+
+     & div{
+        width: 20%;
+         display: flex;
+         flex-direction: column;
+         
+         align-items: center;
+        
+
+         & p{ 
+            color: var(--primaryRed);
+         }
+
+         & ul{
+             list-style: none;
+
+             & li{
+               padding: 5px;  
+             }
+         }
+     }
+  
+
+
+     &__btn{
+        display: flex;
+        
+        width: 10rem;
+        height:3rem;  
+        padding: 8px 22px;
+        justify-content: center;
+        align-items: center;
+         gap: 4px;
+        border-radius: 8px;
+        border: 1px solid #E8E8E8;
+        background: #FFF;
+        box-shadow: 6px 6px 60px 0px rgba(0, 0, 0, 0.07);
+        background-repeat: no-repeat;
+        background-position: 2px 50%;
+        background-size: 20px 20px;
+        margin-bottom: 10px;
+
+       
+        
+        &--app{
+             background-image: url("../images/apple.png");
+        }
+        &--play{
+             background-image: url("../images/playStore.png");
+        }
+     }
+
+     &__logo{
+       padding-left: 1rem;
+       padding-top: 1rem;
+       & p  {
+          
+           color: white !important;
+       }
+       & img
+       {
+          background-color: white;
+       }
+       
+     }
+}
+
+@media(max-width:650px){
+    .footer{
+      flex-wrap: wrap;
+      gap: 3rem;
+     & div{
+       width: 40%;
+     }
+
+    }
+}
